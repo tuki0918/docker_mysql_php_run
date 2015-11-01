@@ -18,6 +18,8 @@ docker pull -a php
 
 ##### 起動
 ----
++ 事前にDBを起動しておく
+	+ ref: https://github.com/tuki0918/docker_mysql_run
 ```
 docker run -itd -P -v $(pwd):/var/www/html --link some-mysql:db --name php5.6-apache php:5.6-apache
 ```
